@@ -21,3 +21,10 @@ dns:
     - tls://1.1.1.1:853
     - tls://1.0.0.1:853
     - tls://dns.google:853
+Proxy:
+- name: "🎶 Unblock网易云"
+  type: ss
+  server: music.desperadoj.com
+  port: 30001
+  cipher: aes-128-gcm
+  password: desperadoj.com
