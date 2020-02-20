@@ -7,6 +7,12 @@ log-level: info
 external-controller: '0.0.0.0:9090'
 Proxy:
 - { name: "UnblockNeteaseMusic", type: http, server: "47.114.74.196", port: 8080}
+Proxy Group:
+- name: Netease Music
+  type: select
+  proxies:
+  - DIRECT
+  - UnblockNeteaseMusic
 Rule:
 - DOMAIN-SUFFIX,163.com,UnblockNeteaseMusic
 - GEOIP,CN,DIRECT
