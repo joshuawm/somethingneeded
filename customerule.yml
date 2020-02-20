@@ -5,6 +5,7 @@
 surge_ruleset=🎯 全球直连,rules/ConnersHua/Surge/Ruleset/Unbreak.list
 surge_ruleset=🎯 全球直连,https://raw.githubusercontent.com/lzdnico/subconverteriniexample/master/surgerule/Academic.list
 surge_ruleset=🎯 全球直连,rules/NobyDa/Surge/Download.list
+surge_ruleset=👁‍🗨 网易解锁,https://raw.githubusercontent.com/lzdnico/subconverteriniexample/master/surgerule/netease
 surge_ruleset=🛑 全球拦截,rules/ACL4SSR/Clash/BanAD.list
 surge_ruleset=🚩 应用拦截,rules/ACL4SSR/Clash/BanProgramAD.list
 surge_ruleset=🎯 全球直连,rules/ACL4SSR/Clash/ChinaDomain.list
@@ -19,7 +20,7 @@ surge_ruleset=🐟 漏网之鱼,[]FINAL
 enable_rule_generator=true
 ;设置分组标志位
 custom_proxy_group=🔰 代理模式`select`[]🕹 手動選擇`[]🌌 故障切換`[]🚀 延遲最低`[]🎯 全球直连
-#custom_proxy_group=👁‍🗨 网易解锁`select`(网易云)`[]🎯 全球直连
+custom_proxy_group=👁‍🗨 网易解锁`select`(Netease)`[]🎯 全球直连
 custom_proxy_group=📫 电报吹水`select`[]🕹 手動選擇`[]🌌 故障切換`[]🚀 延遲最低`[]🎯 全球直连
 custom_proxy_group=📺 NETFLIX`select`.*
 custom_proxy_group=🎥 国外媒体`select`[]🕹 手動選擇`[]🌌 故障切換`[]🚀 延遲最低`[]🎯 全球直连
