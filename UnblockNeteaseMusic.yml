@@ -1,12 +1,20 @@
-port: 7890
-socks-port: 7891
-redir-port: 0
-allow-lan: true
+port: 7890 # port of HTTP
+socks-port: 7891 # port of SOCKS5
+redir-port: 7892 # redir port for Linux and macOS
+allow-lan: false
 mode: Rule
 log-level: info
-external-controller: '0.0.0.0:9090'
+external-controller: 127.0.0.1:9090
+
 Proxy:
-- { name: "UnblockNeteaseMusic", type: http, server: "47.114.74.196", port: 8080, username: "Netease", password: "Unblocker", tls: false}
+- name: "UnblockNeteaseMusic"
+  type: http
+  server: 47.114.74.196
+  port: 8080
+  username: Netease
+  password: Unblocker
+  tls: false # https
+  # skip-cert-verify: true
 Proxy Group:
 - name: Netease Music
   type: select
@@ -14,6 +22,6 @@ Proxy Group:
   - DIRECT
   - UnblockNeteaseMusic
 Rule:
-- DOMAIN-SUFFIX,163.com,UnblockNeteaseMusic
+- DOMAIN-SUFFIX,163.com,Netease Music
 - GEOIP,CN,DIRECT
 - MATCH,DIRECT
