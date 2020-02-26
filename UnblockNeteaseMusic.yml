@@ -11,17 +11,15 @@ Proxy:
   type: http
   server: 47.114.74.196
   port: 8080
-  username: Netease
-  password: Unblocker
   tls: false # https
   # skip-cert-verify: true
 Proxy Group:
-- name: Netease Music
+- name: NeteaseMusic
   type: select
   proxies:
   - DIRECT
   - UnblockNeteaseMusic
 Rule:
-- DOMAIN-SUFFIX,163.com,Netease Music
+- DOMAIN-SUFFIX,163.com,NeteaseMusic
 - GEOIP,CN,DIRECT
 - MATCH,DIRECT
