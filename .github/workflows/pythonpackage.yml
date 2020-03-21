@@ -27,4 +27,4 @@ jobs:
         python -m pip install --upgrade pip
     - name: Lint with flake8
       run: |
-        python3 1.py
+        python3 .github/workflows/1.py
