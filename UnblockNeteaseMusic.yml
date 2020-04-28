@@ -9,7 +9,7 @@ external-controller: 127.0.0.1:9090
 Proxy:
 - name: "UnblockNeteaseMusic"
   type: http
-  server: 47.114.74.196
+  server: server
   port: 8080
   tls: false # https
   # skip-cert-verify: true
