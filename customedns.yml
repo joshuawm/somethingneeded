@@ -12,10 +12,9 @@ dns:
   listen: 0.0.0.0:53
   enhanced-mode: redir-host
   nameserver:
-    - 2a07:a8c0::c4:6589
-    - 2a07:a8c1::c4:6589
-    - tls://c46589.dns.nextdns.io
-    - https://dns.nextdns.io/c46589
+    - 1.1.1.1
+    - 223.5.5.5
+    - 223.6.6.6
   fallback:
     - tls://1.1.1.1:853
     - tls://1.0.0.1:853
