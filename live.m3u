@@ -1,3 +1,4 @@
 #EXTM3U
-#EXTINF:-1,PlsFuckMeTV
-http://45.248.69.95:8088/hls/live.stream.m3u8
+  
+#EXTINF:-1 tvg-group="Gay Porn" tvg-logo="https://s1.ax1x.com/2020/05/21/YbiIsA.png",PlsFuckME
+https://live.justpupet.usw1.kubesail.io/hls/live.stream.m3u8
